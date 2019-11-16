@@ -2,17 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player2 : MonoBehaviour
+public class Missile : MonoBehaviour
 {
+    public float missileSpeed;
+
+    private Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    void FixedUpdate()
+    {
+        
+
+        rb.AddRelativeForce(Vector3.up * missileSpeed);
     }
 }
