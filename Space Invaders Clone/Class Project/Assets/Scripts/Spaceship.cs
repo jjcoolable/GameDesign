@@ -14,8 +14,7 @@ public class Spaceship : MonoBehaviour
     public float xPos;
     public GameObject missile;
     public float fireRate;
-    public float destroyTime;
-
+    
     private float timeBetweenShots;
     private Rigidbody rb;
     private float angle = 0;
@@ -28,7 +27,6 @@ public class Spaceship : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         timeBetweenShots = 1 / fireRate;
         nextFire = Time.time;
-        Destroy();
     }
 
     // Update is called once per frame
@@ -40,12 +38,6 @@ public class Spaceship : MonoBehaviour
         {
             Fire(missile);
         }
-        Destroy();
-    }
-
-    private void Destroy()
-    {
-        Destroy(missile.gameObject, destroyTime);
     }
 
     private void Fire(GameObject missile)

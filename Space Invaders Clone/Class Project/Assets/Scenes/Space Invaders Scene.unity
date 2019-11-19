@@ -147,7 +147,7 @@ Camera:
   m_GameObject: {fileID: 483803681}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -211,7 +211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f8be63edd520032488cf5b981351615d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.8
+      value: -7.13
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f8be63edd520032488cf5b981351615d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -377,7 +377,8 @@ MonoBehaviour:
   frequency: 0.1
   xPos: 0
   missile: {fileID: 20809917682020501, guid: 2b45c8ff0e94e5d4b8d0a55261d3c293, type: 3}
-  fireRate: 0
+  fireRate: 2
+  destroyTime: 2
 --- !u!4 &1180891924
 Transform:
   m_ObjectHideFlags: 0
