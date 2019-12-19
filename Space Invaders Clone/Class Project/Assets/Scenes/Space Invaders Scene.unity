@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7de98696956c7dd4aa4984f224e08e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  torqueForce: 0
 --- !u!4 &506461223 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2489164132843895415, guid: e1a540fe1cdc68948842d9f219a86abd,
@@ -296,6 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 747280402}
+  - component: {fileID: 747280403}
   m_Layer: 0
   m_Name: Alien
   m_TagString: Untagged
@@ -318,6 +320,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &747280403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747280401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2a7cfa1bdfc7b40aa0177eecff01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 3
+  explosion: {fileID: 6581122975844585515, guid: 53a33a2f04fe6374a8428175914e587f,
+    type: 3}
+  fireRate: 0.5
+  fireProb: 0.1
+  timeForFirstShot: 2
+  alienBullet: {fileID: 5472418649506412583, guid: 1f467fc7dce204448946e7c5bc9623f2,
+    type: 3}
+  bulletOffset: {x: 0, y: 5, z: 0}
 --- !u!1 &847009043
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,7 +357,7 @@ GameObject:
   m_Layer: 0
   m_Name: Border Left
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -595,7 +618,7 @@ GameObject:
   m_Layer: 0
   m_Name: Border Right
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
